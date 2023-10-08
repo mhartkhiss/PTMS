@@ -1,0 +1,450 @@
+
+.page-container {
+    max-height: 100vh; 
+    overflow: auto; 
+    max-width: 100%;
+}
+table {
+    width: 100%;
+    table-layout: fixed;  
+}
+
+th, td {
+    width: 150px; 
+    word-wrap: break-word; 
+    text-align: center;
+}
+/*.form-container {
+    background-color: #21242a;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%; 
+    margin: 0 auto;
+    position: relative;
+}*/
+/* Adjust the width and height of the scrollbar track (the background) */
+::-webkit-scrollbar {
+    width: 6px; /* Adjust the width of the vertical scrollbar */
+    height: 6px; /* Adjust the height of the horizontal scrollbar */
+}
+
+/* Adjust the appearance of the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: #555; /* Color of the scrollbar thumb */
+    border-radius: 3px; /* Rounded corners for the thumb */
+}
+
+/* Adjust the appearance of the scrollbar track when hovered */
+::-webkit-scrollbar-track:hover {
+    background-color: #77777700; /* Color of the scrollbar track on hover */
+}
+
+
+.form-scroll-container {
+    max-height: 450px; 
+    overflow-y: auto; 
+}
+#editTaskForm {
+    background-color: #36393f;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0px auto 0; 
+    
+    
+}
+
+#editTaskForm input[type="text"],
+#editTaskForm input[type="date"],
+#editTaskForm select,
+#editTaskForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #40444b;
+    color: #ffffff;
+    border: 1px solid #202225;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+
+#editTaskForm button[type="submit"],
+#editTaskForm button {
+    background-color: #0270D7;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#editTaskForm button#deleteTaskButton {
+    background-color: #FF6666; 
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#editTaskForm button[type="submit"]:hover,
+#editTaskForm button#deleteTaskButton:hover {
+    background-color: #677bc4;
+}
+#editTaskForm button#deleteTaskButton:hover {
+    background-color: #9b0008;
+}
+
+
+#editTaskForm input::placeholder,
+#editTaskForm textarea::placeholder {
+    color: #8e9297;
+}
+
+
+#editTaskForm select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('https://imageurl.com/your-dropdown-arrow-image.png'); 
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    padding-right: 30px; 
+}
+#taskForm {
+    background-color: #36393f;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#taskForm input[type="text"],
+#taskForm input[type="date"],
+#taskForm select,
+#taskForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #40444b;
+    color: #ffffff;
+    border: 1px solid #202225;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#taskForm button[type="submit"] {
+    background-color: #0270D7;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#taskForm button[type="submit"]:hover {
+    background-color: #677bc4;
+}
+
+#taskForm input::placeholder,
+#taskForm textarea::placeholder {
+    color: #8e9297;
+}
+
+#taskForm select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('https://imageurl.com/your-dropdown-arrow-image.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    padding-right: 30px; 
+}
+
+
+.user-profile-popup {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(54, 57, 63); 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    color: #fff; 
+}
+
+.user-profile-popup h1 {
+    font-size: 1.5em; 
+    margin-bottom: 10px; 
+}
+
+.user-profile-popup p {
+    margin: 10px 0; 
+}
+.no-tasks-message {
+    color: #777; 
+    font-size: 23px; 
+    margin-top: 10px; 
+}
+.user-profile-popup button {
+    background-color: #0270D7; 
+    color: #fff;
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer;
+}
+
+.user-profile-popup button:hover {
+    background-color: rgb(103, 126, 208); 
+}
+.header {
+    display: flex; 
+    align-items: center; 
+}
+
+.header-logo-image {
+    margin-right: 10px; 
+}
+.header p {
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 25px;
+}
+.header-link {
+    text-decoration: none; 
+}
+
+.username {
+    text-decoration: underline; 
+}
+#taskOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    text-align: center;
+}
+#taskCategory {
+    width: 100%; 
+    padding: 5px; 
+}
+#taskDescription {
+    width: 100%; 
+    height: 1500%;
+    padding: 5px; 
+}
+#etaskDescription {
+    width: 100%; 
+    height: 1500%;
+    padding: 5px; 
+}
+
+.overlay-content {
+    background-color: #5e5e5e;
+    border-radius: 8px;
+    max-width: 30%; 
+    margin: 10% auto; 
+    padding: 20px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+}
+tr:hover {
+    background-color: #1d6cc7;
+    cursor: pointer; 
+}
+table thead tr:hover {
+    background-color: transparent; /* Set the background color to transparent on hover */
+    /* Add any other styling you want */
+    cursor: default;
+    
+    
+}
+table select {
+    width: 100%; /* Set the width to fill the cell */
+    text-align: center; /* Center-align the text within the dropdown */
+    background: transparent; 
+    color: #d4d4d4; 
+    border: 1px solid transparent; 
+    border-radius: 4px; 
+    padding: 5px; 
+    outline: none; 
+    
+}
+table select:hover {
+    cursor: pointer;
+    background-color: #333333; 
+    
+}
+/* Style for unselected options */
+table select option {
+    background-color: #333333; /* Set the background color for unselected options */
+    color: lightgray;  /* Set the text color for unselected options */
+}
+
+/* Style for selected option */
+table select option:checked {
+    background-color: #333333; /* Set the background color for the selected option */
+    color: white; /* Set the text color for the selected option */
+}
+.button-container {
+    position: relative;
+    padding-top: 60px;
+}
+
+#addTaskButton {
+    background-color: #0270D7; 
+    color: #fff;
+    position: absolute;
+    top: 0; 
+    border: none; 
+    border-radius: 20px; 
+    text-align: center;
+    font-size: 15px;
+    padding: 7px 12px;
+    cursor: pointer;
+}
+  
+#taskTable {
+    margin: 0 auto; 
+    width: 150%; 
+    max-width: 1200px; 
+}
+
+#taskTable td:nth-child(2) {
+    max-width: 300px; 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+#taskTable thead {
+    background-color: #3f3f3f; 
+    font-weight: bold; 
+}
+
+
+.tasks-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+
+
+
+
+
+#addTaskButton:hover {
+    background-color: #014C91; 
+}
+
+.centered-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.centered-form input[type="text"],
+.centered-form input[type="password"],
+.centered-form input[type="email"],
+.centered-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-task-popup {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); 
+z-index: 999; 
+}
+.edit-task-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999
+    }
+
+.popup-content {
+    
+background-color: #1d2026;
+border-radius: 8px;
+max-width: 500px;
+margin: 10% auto;
+padding: 20px;
+position: relative;
+}
+
+h3 {
+    position: absolute;
+    top: -90px;
+    right: 170px;
+    background-color: #0270d7b9;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure it's above the form content */
+}
+
+.user-tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+.site-header-container {
+    position: relative;
+    z-index: 1; 
+}
+
+.site-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background: #242830;
+    background: linear-gradient(80deg, rgba(36, 40, 48, 0.5) 0%, rgba(36, 40, 48, 0) 100%);
+    transform-origin: 0;
+    transform: skewY(-12deg);
+}
