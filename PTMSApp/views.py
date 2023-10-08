@@ -7,7 +7,7 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 import json
 
-    
+    #xxxxxxxxxxxxxxxxxx
     
 def login_view(request):
     if request.method == "POST":
